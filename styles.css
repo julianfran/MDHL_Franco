@@ -2,81 +2,180 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    font-family: 'Balsamiq Sans';
-}
+    font-family: 'Graduate', cursive;
+    
+} 
 header {
-    background-image: linear-gradient(rgba(6, 95, 61, 0.5), rgba(255, 255, 0, 0.925)),
+    background-image: linear-gradient(rgba(62, 22, 247, 0.8), rgba(62, 22, 247, 0.8)),
                         url("./img/banner.jpg");
-
+                        background-size: contain;
+                        background-position: center;
+                        background-repeat: repeat-x;
     width: 100%;
-    min-height: 20vw;
-    padding:2vw 0 0 2vw;
+    min-height: 20vh;
+    padding:20px;
     box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 25px;
+    color:#F7DD16;
+    text-shadow: 2px 2px #000000;
+}
+header img {
+    width: 100px;
 }
 h1 {
-    font-size: 3em;
+    font-size: 2rem;
+    flex-grow: 1;
 }
-
-.barraHorizontal {
-    background-color: rgb(0, 0, 0);
-    min-height: 40px;
-    position: relative;
-    text-align: center;
-    width: 100%;
-    box-sizing: border-box;
-    padding: 5px 0 0 0;
-    margin-bottom: 10px;
-}
-.barraHorizontal img {
-    width: 100px;
-    display: inline-block;
-    background-color: blue;
-    border-radius: 15%;
-    position: absolute;
-    top:-30px;
-    right: 15vw;
-}
-h2 {
-    color:yellow;
-    display: inline-block;
-}
-
 nav {
-    display: inline-block;
-    width:15%;
-    padding: 15px;
+    box-sizing: border-box;
+    display: flex;
+    width:100%;
+    min-height: 6vh;
+    background-color: #F7DD16;
+    justify-content: start;
+    align-items: stretch;
+    flex-wrap: wrap;
+
 }
 nav a {
-    display: block;
-    margin-bottom: 20px;
-    color:blue
+        text-decoration: none;
+        display: flex;
+        align-items: center;
+        padding: 5px 15px 5px 15px;
+        color:#3E16F7; 
+    }
+nav a:visited {
+    color:#3E16F7; 
 }
 nav a:hover {
-    color:red;    
-}
-
-nav a:visited {
-    color: blue;
+    background-color: #d4bf1e;
+    text-decoration: none;
+    color:#fff
 }
 nav a:active {
-    color:brown;
+    color:#F74123
 }
-
-#dentroDe {
+#active {
+    background-color: #3E16F7;
     text-decoration: none;
-    color: black;
+    color: #F7DD16;
 }
-
 main {
-    display: inline;
-    position: absolute;
-    padding: 20px 100px 20px 20px;
+    padding: 20px 50px 20px 50px;
 }
-
-main img {
-    margin: 15px;
-    height: 200px;
+.contenedor {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    box-sizing: border-box;
+}
+h2 {
+    color:#3E16F7;
+    margin:0 0 15px 0
+}
+.agenda {
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: start;
+    flex-direction: column;
+    border: 1px solid rgba(0, 0, 0, 0.26);
+}
+.caja {
+    box-sizing: border-box;
+    height: 150px;
+    display: flex;
+    align-items: center;
+}
+.evento {
+    box-sizing: border-box;
+    display: flex;
+    justify-content:space-between;
+    height: 98%;
+    background-color: rgba(211, 211, 211, 0.404);
+    gap: 15px
+}
+.evento h3 {
+    color:#F74123;
+    font-size: 1.7rem;
+    text-shadow: 1px 1px #000004;
+    margin:10px 0 10px 10px;
+    flex-grow: 1;
+}
+.evento p {
+    margin:15px 0 10px 0;
+    flex-grow: 10;
+    font-size: 0.8rem;
+}
+.evento img {
+    width: 25%;
+    object-fit: cover;
+    filter: grayscale(1)
+}
+.bordeIzquierdoImpar {
+    box-sizing: border-box;
+    background-color: #3E16F7;
+    width: 5px;
+    height: 98%;
+}
+.bordeIzquierdoPar {
+     box-sizing: border-box;
+    background-color: #F7DD16;
+    width: 5px;
+    height: 98%;
 }
 p {
     margin: 0 0 20px 0 ;
+}
+dt{
+    font-weight: bold;
+    margin:25px 0 15px 0;
+}
+li {
+    list-style-position: inside;
+    margin:10px 0 0 0;
+}
+li::marker {
+    font-weight: bold;
+}
+.listaEnMinusculas {
+    list-style-type:lower-latin;
+}
+.listaMargenCorto {
+    margin-left:1rem
+}
+.listaMargenLargo {
+    margin-left: 2rem;
+}
+.listaAbout {
+    margin:25px 0 5px 0;
+}
+.fontMonserrat {
+    font-family: 'Montserrat', sans-serif;
+}
+.contenedorAbout {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    box-sizing: border-box;
+    font-family: 'Montserrat' sans-serif;
+}
+table {
+    width: 80vw;
+    margin:10px 0 20px 0;
+}
+table th {
+    background-color: #F74123;
+    height: 45px;
+}
+table td {
+    text-align: center;
+    height: 35px;
+    background-color: #00000023;
 }

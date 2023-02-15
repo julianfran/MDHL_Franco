@@ -9,34 +9,50 @@
     <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Graduate&display=swap" rel="stylesheet">
 </head>
 <body>
 <header>
+    <img src="./img/logo_MDHL_sin_texto.png" alt="logo MDHL">
     <h1>Mighty Ducks Hockey League</h1>
 </header>
-<section class="barraHorizontal">
-    <h2>Upcoming Events</h2>
-    <img src="./img/logo_MDHL.png" alt="logo MDHL">
-</section>
 <nav>
-    <a href="#" id="dentroDe">Home</a>
+    <a href="#" id="active">Home</a>
     <a href="./about.html">About MDHL</a>
     <a href="./contact.html">Contact</a>
+    <a href="./game_information.html">Game information</a>
+    <a href="./rules.html">Rules</a>
 </nav>
 <main>
-    <article>
-
-            <h3>August 4</h3>
-            <p>MDSL Fundraiser</p>
-            <h3>August 16</h3>
-            <p>Season Kick-off: Meet the Teams</p>
-            <h3>September 1</h3>
-            <p>First Game of the Season (Check Game Schedule for details)</p>
-            <img src="./img/hockey_1.jpg" alt="logo MDHL">
-            <img src="./img/hockey_3.jpg" alt="logo MDHL">
-            <img src="./img/hockey_2.jpg" alt="logo MDHL">
-    </article>
+    <section class="contenedor">
+        <h2>Upcoming Events</h2>
+        <div class="agenda">
+            <section class="caja">
+                <div class="bordeIzquierdoImpar"></div>
+                <div class="evento">
+                    <h3>Aug 4</h3>
+                    <p>MDSL Fundraiser</p>
+                    <img src="./img/hockey_1.jpg" alt="jugador de hockey en primer plano">
+                </div>
+            </section>
+            <section class="caja">
+                <div class="bordeIzquierdoPar"></div>
+                <div class="evento">
+                    <h3>Aug 16</h3>
+                    <p>Season Kick-off: Meet the Teams</p>
+                    <img src="./img/hockey_2.jpg" alt="un jugador de hockey arrastrando el disco">
+                </div>
+            </section>
+            <section class="caja">
+                <div class="bordeIzquierdoImpar"></div>
+                <div class="evento">
+                    <h3>Sep 1</h3>
+                    <p>First Game of the Season (Check Game Schedule for details)</p>
+                    <img src="./img/hockey_3.jpg" alt="dos jugadores de hockey mirándose entre sí">
+                </div>
+            </section>
+        </div>
+    </section>
     </main>
 </body>
 </html>
