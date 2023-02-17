@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration</title>
+    <link rel="icon" type="image/x-icon" href="/img/favicon.ico">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Graduate&family=Montserrat:wght@100;400;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+<header>
+    <img src="./img/logo_MDHL_sin_texto.png" alt="logo MDHL">
+    <h1>Mighty Ducks Hockey League</h1>
+</header>
+<nav>
+    <a href="./index.html">Home</a>
+    <a href="./about.html">About MDHL</a>
+    <a href="./contact.html">Contact</a>
+    <a href="./game_information.html">Game information</a>
+    <a href="./rules.html">Rules</a>
+    <a href="#"  id="active">Registration</a>
+</nav>
+<main>
+    <section class="contenedor">
+        <h2>Registration form</h2>
+        <form action="./show_data.html">
+            <fieldset class="fieldsetFlexColumn">
+                <label>
+                    Player's first name: 
+                    <input name="first_name" type="text" required>
+                </label>
+                <label>
+                    Last name: 
+                    <input name="last_name" type="text" required>
+                </label>
+                <label>
+                    Street address: 
+                    <input name="street_address" type="text" required>
+                </label>
+                <label>
+                    City: 
+                    <input name="city" type="text" required>
+                </label>
+                <label>
+                    Zip code 
+                    <input name="zip_code" type="number" required>
+                </label>
+                <label>
+                    Birth date 
+                    <input name="birth_date" type="date" required>
+                </label>
+                <p class="pMarginTop"><strong>Gender</strong></p>
+                <label class="customRadio">
+                    Female
+                    <input name="gender" type="radio" value="F" required>
+                    <span class="radioSelect"></span>
+                </label>
+                <label class="customRadio">
+                    Male
+                    <input name="gender" type="radio" value="M">
+                    <span class="radioSelect"></span>
+                </label>
+                <p class="pMarginTop"><strong>Grade</strong></p>
+                <label class="customRadio">
+                    <input name="grade" type="radio" value="ps" required>
+                    <span class="radioSelect"></span>
+                    Pre-School
+                </label>
+                <label class="customRadio">
+                    <input name="grade" type="radio" value="1">
+                    <span class="radioSelect"></span>
+                    1st
+                </label>
+                <label class="customRadio">
+                    <input name="grade" type="radio" value="2">
+                    <span class="radioSelect"></span>
+                    2st
+                </label>
+                <label class="customRadio">
+                    <input name="grade" type="radio" value="3">
+                    <span class="radioSelect"></span>
+                    3st
+                </label>
+                <label class="customRadio">
+                    <input name="grade" type="radio" value="4">
+                    <span class="radioSelect"></span>
+                    4st
+                </label>
+                <label class="customRadio">
+                    <input name="grade" type="radio" value="5">
+                    <span class="radioSelect"></span>
+                    5st
+                </label>
+            </fieldset>
+            <fieldset>
+                <legend>Which elementary school do you live near?</legend>
+                <p><strong>Closest School</strong></p>
+                <label class="customRadio">
+                    <input name="school" type="radio" value="aj_katzenmaier" required>
+                    <span class="radioSelect"></span>
+                    AJ Katzenmaier
+                </label>
+                <label class="customRadio">
+                    <input name="school" type="radio" value="greenbay" required>
+                    <span class="radioSelect"></span>
+                    Greenbay
+                </label>
+                <label class="customRadio">
+                    <input name="school" type="radio" value="howard_a_yeager">
+                    <span class="radioSelect"></span>
+                    Howard A Yeager
+                </label>
+                <label class="customRadio">
+                    <input name="school" type="radio" value="marjorie_p_hart">
+                    <span class="radioSelect"></span>
+                    Marjorie P Hart
+                </label>
+                <label class="customRadio">
+                    <input name="school" type="radio" value="north_elementary">
+                    <span class="radioSelect"></span>
+                    North Elementary
+                </label>
+                <label class="customRadio">
+                    <input name="school" type="radio" value="south_elementary">
+                    <span class="radioSelect"></span>
+                    South Elementary
+                </label>
+            </fieldset>
+            <fieldset>
+                <legend>What position(s) do you normally play? (check all that apply)</legend>
+                <label class="customCheckbox">
+                    <input name="position" type="checkbox" value="F">
+                    <span class="checkmark"></span>
+                    Forward
+                </label>
+                <label class="customCheckbox">
+                    <input name="position" type="checkbox" value="D">
+                    <span class="checkmark"></span>
+                    Defense
+                </label>
+                <label class="customCheckbox">
+                    <input name="position" type="checkbox" value="M">
+                    <span class="checkmark"></span>
+                    Midfield
+                </label>
+                <label class="customCheckbox">
+                    <input name="position" type="checkbox" value="G">
+                    <span class="checkmark"></span>
+                    Goalkeeper
+                </label>
+            </fieldset>
+            <fieldset>
+                <legend>Uniform Size:</legend>
+                <label class="customRadio">
+                    <input name="uniform" type="radio" value="ys">
+                    <span class="radioSelect"></span>
+                    Youth Small
+                </label>
+                <label class="customRadio">
+                    <input name="uniform" type="radio" value="ym">
+                    <span class="radioSelect"></span>
+                    Youth Medium
+                </label>
+                <label class="customRadio">
+                    <input name="uniform" type="radio" value="yl">
+                    <span class="radioSelect"></span>
+                    Youth Large
+                </label>
+                <label class="customRadio">
+                    <input name="uniform" type="radio" value="s">
+                    <span class="radioSelect"></span>
+                    Small
+                </label>
+                <label class="customRadio">
+                    <input name="uniform" type="radio" value="m">
+                    <span class="radioSelect"></span>
+                    Medium
+                </label>
+                <label class="customRadio">
+                    <input name="uniform" type="radio" value="l">
+                    <span class="radioSelect"></span>
+                    Large
+                </label>
+                <label class="customRadio">
+                    <input name="uniform" type="radio" value="xl">
+                    <span class="radioSelect"></span>
+                    Extra-Large
+                </label>
+            </fieldset>
+            <fieldset>
+                <legend>Permission to Play</legend>
+                <p class="pMarginButtom">I, the paretn or guardian of the minor registrant, agree that the registrant and I will abide by all the rules of the Might Ducks Hockey League (MDHL). In recognizing the possibility of physical injury associated with hockey and in consideration for the "League" accepting the registrant for its hockey programs and activities, I hereby release, discharge, and/or otherwise indemnify MDHL, their employees and associated personnel and volunteers, including the facilities used for practices and games, against any claim by or on behalf of the registrant as a result of the registrant's participation in the programan/orbeing transported to or from MDHL sponsored activities, which transportation.</p>
+                <p class="pMarginButtom">By signing below, I hereby agree and authorize the above. In addition, by signing below, I also acknow ledge that I have read the cancellation policy and agree to its terms.</p>
+                <label>
+                   <strong>Parent/Guardian signature:</strong> 
+                    <input name="guardian_signature" type="text" required>
+                </label>
+                <label>
+                    <strong>Date:</strong>
+                    <input name="registration_date" type="date" required>
+                </label>
+            </fieldset>
+
+            <button>Submit</button>
+        </form>
+    </section>
+</main>
+</body>
+</html>
